@@ -1,17 +1,17 @@
 package gui;
 
+import javafx.geometry.Insets;
+import javafx.scene.control.Label;
+import javafx.scene.text.Font;
 
-public class DisplayPart{
+public class DisplayPart extends Label {
 	
 	public DisplayPart() {
-		
-		// implement your code here
-		
+		this.setPadding(new Insets(10));
+		this.setFont(new Font(18));
 	}
 	
 	public void update(String text) {
-
-		// implement your code here
-		
+		this.setText(text);
 	}
 }
